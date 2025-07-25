@@ -12,68 +12,69 @@
             rel="stylesheet" />
     </head>
     <body>
-        <header>
-            <div class="tagline-container inter-tagline">
-                <p>The PREMIER online television network organization of De La Salle University</p>
-            </div>
-            <nav class="navbar-container inter-navbar">
-                <img src="assets/logo-ARCH.svg" alt="Archers Network logo" />
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li class="channels-dropdown" id="channels-dropdown">
-                        <a href="#" id="channels-toggle">Channels</a>
-                        <div class="channels-nav acafad-subnav" id="channels-nav">
-                            <a href="#">Entertainment</a>
-                            <a href="#">Sports</a>
-                            <a href="#">Culture</a>
-                            <a href="#">Advertisements</a>
-                            <a href="#">News and Current Affairs</a>
-                            <a href="#">Events</a>
-                        </div>
-                    </li>
-                    <li><a href="#">Art</a></li>
-                    <li><a href="#">Talents</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </nav>
-        </header>
+    <header class="header">
+        <div class="header__tagline tagline tagline--inter">
+            <p>The PREMIER online television network organization of De La Salle University</p>
+        </div>
+        <nav class="navbar navbar--inter">
+            <img class="navbar__logo" src="assets/logo-ARCH.svg" alt="Archers Network logo" />
+            <ul class="navbar__list">
+                <li class="navbar__item"><a class="navbar__link" href="#">Home</a></li>
+                <li class="navbar__item navbar__item--has-dropdown" id="channels-dropdown">
+                    <a class="navbar__link" href="#" id="channels-toggle">Channels</a>
+                    <div class="navbar__dropdown dropdown dropdown--afacad" id="channels-nav">
+                        <a class="dropdown__link" href="#">Entertainment</a>
+                        <a class="dropdown__link" href="#">Sports</a>
+                        <a class="dropdown__link" href="#">Culture</a>
+                        <a class="dropdown__link" href="#">Advertisements</a>
+                        <a class="dropdown__link" href="#">News and Current Affairs</a>
+                        <a class="dropdown__link" href="#">Events</a>
+                    </div>
+                </li>
+                <li class="navbar__item"><a class="navbar__link" href="#">Art</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="#">Talents</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="#">About Us</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <footer class="footer-container inter-navbar">
-            <div class="footer-content">
-                <p class="footer-cta inter-cta">
-                    <span class="green-highlight">Archers Network</span> is <br />
-                    open to collaborations!
-                </p>
-                <div class="contact-item inter-contact-item footer-location">
-                    <img src="assets/location-vector.svg" />
-                    <p>Room 501, Br. Connon FSC Hall, De La Salle University, Malate, Manila, Philippines</p>
-                </div>
-                <div class="contact-item inter-contact-item footer-email">
-                    <img src="assets/email-vector.svg" />
-                    <p>archersnetwork@dlsu.edu.ph</p>
-                </div>
+    <footer class="footer footer--inter">
+        <div class="footer__content">
+            <p class="footer__cta cta cta--inter">
+                <span class="cta__highlight">Archers Network</span> is <br />
+                open to collaborations!
+            </p>
+            <div class="footer__contact-item contact-item contact-item--location contact-item--inter">
+                <img class="contact-item__icon" src="assets/location-vector.svg" />
+                <p class="contact-item__text">Room 501, Br. Connon FSC Hall, De La Salle University, Malate, Manila, Philippines</p>
             </div>
-            <div class="footer-form">
-                <form class="grid-form">
-                    <div class="form-group">
-                        <label for="name" class="inter-form-label green-highlight">Name</label>
-                        <input type="text" id="name" name="name" required />
-                    </div>
-                    <div class="form-group">
-                        <label for="contact" class="inter-form-label green-highlight">Contact No.</label>
-                        <input type="text" id="contact" name="contact" required />
-                    </div>
-                    <div class="form-group">
-                        <label for="email" class="inter-form-label green-highlight">Email Address</label>
-                        <input type="email" id="email" name="email" required />
-                    </div>
-                    <div class="form-group">
-                        <label for="inquiry" class="inter-form-label green-highlight">Inquiry</label>
-                        <input type="text" id="inquiry" name="inquiry" required />
-                    </div>
-                </form>
+            <div class="footer__contact-item contact-item contact-item--email contact-item--inter">
+                <img class="contact-item__icon" src="assets/email-vector.svg" />
+                <p class="contact-item__text">archersnetwork@dlsu.edu.ph</p>
             </div>
-        </footer>
-    </body>
+        </div>
+        <div class="footer__form">
+            <form class="form form--grid">
+                <div class="form__group">
+                    <label for="name" class="form__label form__label--inter form__label--highlight">Name</label>
+                    <input type="text" id="name" name="name" class="form__input" required />
+                </div>
+                <div class="form__group">
+                    <label for="contact" class="form__label form__label--inter form__label--highlight">Contact No.</label>
+                    <input type="text" id="contact" name="contact" class="form__input" required />
+                </div>
+                <div class="form__group">
+                    <label for="email" class="form__label form__label--inter form__label--highlight">Email Address</label>
+                    <input type="email" id="email" name="email" class="form__input" required />
+                </div>
+                <div class="form__group">
+                    <label for="inquiry" class="form__label form__label--inter form__label--highlight">Inquiry</label>
+                    <input type="text" id="inquiry" name="inquiry" class="form__input" required />
+                </div>
+            </form>
+        </div>
+    </footer>
+</body>
+
 </html>
