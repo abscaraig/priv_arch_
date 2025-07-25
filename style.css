@@ -12,7 +12,12 @@ body {
 }
 
 /* Typography */
-.inter-tagline {
+.cta__highlight,
+.form__label--highlight {
+    color: var(--green);
+}
+
+.tagline--inter {
     font-family: "Inter", sans-serif;
     font-size: 16px;
     font-weight: 200;
@@ -21,50 +26,56 @@ body {
     color: var(--white);
 }
 
-.inter-navbar {
+.navbar--inter {
     font-family: "Inter", sans-serif;
     font-size: 20px;
     font-weight: 300;
 }
 
-.inter-navbar li {
+.navbar--inter li {
     list-style: none;
 }
 
-.inter-navbar a {
+.navbar--inter a {
     text-decoration: none;
     white-space: nowrap;
     color: var(--black);
 }
 
-.acafad-subnav {
+.dropdown--afacad {
     font-family: "Afacad", sans-serif;
     font-size: 15px;
     font-weight: 700;
 }
 
-.acafad-subnav a {
+.dropdown--afacad a {
     text-transform: uppercase;
     text-decoration: none;
     color: var(--black);
 }
 
-.inter-cta {
+.cta--inter {
     font-size: 55px;
     font-weight: 800;
 }
 
-.inter-contact-item {
+.contact-item--inter {
     font-size: 15px;
     font-weight: 400;
 }
 
-.inter-form-label {
+.footer--inter {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.form__label--inter {
     font-weight: 700;
 }
 
 /* Tagline */
-.tagline-container {
+.header__tagline {
     background-color: var(--dark-gray);
     height: 50px;
     display: flex;
@@ -73,19 +84,19 @@ body {
 }
 
 /* Navbar */
-.navbar-container {
+.navbar {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 25px 0;
 }
 
-.navbar-container img {
+.navbar__logo {
     width: 107px;
     margin-bottom: 35px;
 }
 
-.navbar-container ul {
+.navbar__list {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -93,17 +104,17 @@ body {
     margin: 0;
 }
 
-.navbar-container li {
+.navbar__item {
     padding: 0 29px;
 }
 
-.navbar-container a {
+.navbar__link {
     position: relative;
     display: inline-block;
     padding-bottom: 6px;
 }
 
-.navbar-container a::after {
+.navbar__link::after {
     content: "";
     position: absolute;
     left: 50%;
@@ -115,16 +126,16 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.navbar-container ul li a:hover::after {
+.navbar__item a:hover::after {
     background-color: var(--green);
 }
 
 /* Channels Dropdown */
-.channels-dropdown {
+.navbar__item--has-dropdown {
     position: relative;
 }
 
-.channels-nav {
+.navbar__dropdown {
     display: none;
     position: absolute;
     background-color: var(--light-gray);
@@ -140,22 +151,22 @@ body {
     padding: 10px 20px;
 }
 
-.channels-nav.show {
+.navbar__dropdown.show {
     display: flex;
 }
 
-.channels-nav a {
+.dropdown__link {
     padding-bottom: 0;
 }
 
-.channels-nav a::after,
-.channels-nav a:hover::after {
+.dropdown__link::after,
+.dropdown__link:hover::after {
     display: none;
     background-color: transparent;
 }
 
 /* Footer */
-.footer-container {
+.footer {
     background-color: var(--lighter-gray);
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -164,7 +175,7 @@ body {
     letter-spacing: -0.05em;
 }
 
-.footer-cta {
+.footer__cta {
     margin: 0;
     margin-bottom: 51px;
 }
@@ -175,29 +186,25 @@ body {
     gap: 13px;
 }
 
-.contact-item p {
+.contact-item__text {
     margin: 0;
 }
 
-.contact-item img {
+.contact-item__icon {
     width: 18px;
     margin-top: 4px;
 }
 
-.footer-location {
+.contact-item--location {
     width: 374px;
 }
 
-.footer-email {
+.contact-item--email {
     margin-top: 18px;
 }
 
-.green-highlight {
-    color: var(--green);
-}
-
 /* Form */
-.grid-form {
+.form--grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 35px 55px;
@@ -207,22 +214,28 @@ body {
 }
 
 @media (max-width: 1024px) {
-    .grid-form {
+    .form--grid {
         grid-template-columns: 1fr;
         gap: 24px;
     }
 }
 
-.form-group {
+@media (max-width: 750px) {
+    .footer {
+        grid-template-columns: 1fr;
+    }
+}
+
+.form__group {
     display: flex;
     flex-direction: column;
 }
 
-.form-group label {
+.form__label {
     margin-bottom: 4px;
 }
 
-.form-group input {
+.form__input {
     background: none;
     border: 0;
     border-bottom: 2px solid var(--black);
@@ -230,6 +243,6 @@ body {
     height: 35px;
 }
 
-.form-group input:focus {
+.form__input:focus {
     outline: none;
 }
